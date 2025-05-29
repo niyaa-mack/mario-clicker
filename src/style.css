@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+main {  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 0.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "game game upgrades"
+    "game game upgrades"
+    "characters  characters  characters ";
+}
+
+.game { 
+  grid-area: game; 
+}
+
+.characters  { 
+  grid-area: characters ; 
+}
+
+.upgrades { 
+  grid-area: upgrades; 
+}
+theme {
+--color-razzmatazz-50: #fff0f3;
+--color-razzmatazz-100: #ffe2e8;
+--color-razzmatazz-200: #ffc9d7;
+--color-razzmatazz-300: #ff9eb7;
+--color-razzmatazz-400: #ff6792;
+--color-razzmatazz-500: #ff326f;
+--color-razzmatazz-600: #ef0f5d;
+--color-razzmatazz-700: #d70654;
+--color-razzmatazz-800: #a90849;
+--color-razzmatazz-900: #900b45;
+--color-razzmatazz-950: #510021;
+}
+
+theme {
+  --color-apple-50: #f4fbf2;
+--color-apple-100: #e6f6e2;
+--color-apple-200: #cdecc6;
+--color-apple-300: #a5dc99;
+--color-apple-400: #75c365;
+--color-apple-500: #4d9f3d;
+--color-apple-600: #3e8930;
+--color-apple-700: #346c29;
+--color-apple-800: #2c5625;
+--color-apple-900: #264720;
+--color-apple-950: #10260d;
+}
+
+theme {
+  --color-fiord-50: #f6f7f9;
+--color-fiord-100: #ebeef3;
+--color-fiord-200: #d3d9e4;
+--color-fiord-300: #adb8cc;
+--color-fiord-400: #8193af;
+--color-fiord-500: #617596;
+--color-fiord-600: #465571;
+--color-fiord-700: #3f4c65;
+--color-fiord-800: #374255;
+--color-fiord-900: #313949;
+--color-fiord-950: #212530;
+}

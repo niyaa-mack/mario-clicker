@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <h1> WELCOME TO MARIO CLICKER!!!</h1>
-    <div id="app"></div>
-    
+    <main class="w-screen h-screen">
+      <div class="game bg-gray-500">
+        <header class="top-0 right-0 border-yellow-200 border-x-160 text-center italic text-2xl">
+          Coins
+        </header>
+        <hr class="border-1">
+        <img class="w-40 h-50" src="/src/images/mariof.png">
+      </div>
+
+      <div class="characters bg-purple-600"></div>
+
+      <div class="upgrades bg-pink-300">
+        <section class="">
+          Princess Peach 
+          <button class="cursor-pointer border-2 justify-items-center text-md">20 coins</button>
+        </section>
+      </div>
+
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
