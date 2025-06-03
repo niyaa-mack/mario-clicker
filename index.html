@@ -13,7 +13,7 @@
         
 
 <h1 class="text-center font-bold text-3xl">MARIO CLICKER GAME</h1>
-        <button class="w-70 h-90 active:scale-90 transition-transform justify-center flex m-auto">
+        <button onclick="changePoint(1)" class="w-70 h-90 active:scale-90 transition-transform justify-center flex m-auto">
         <img src="/src/images/mariof.png">
       </button>
       </div>
@@ -26,32 +26,42 @@
 
       <div class="characters bg-purple-500 border border-white">
 
-        <button class="cursor-pointer top-5 justify-items-center left-40 flex text-md rounded active:scale-90 border-2 border-amber-200 rounded-2xl">
+        <button onclick="buyPrincess()" class="cursor-pointer  flex text-md rounded active:scale-90 border-2 border-amber-200 rounded-2xl">
           <img class="w-30 h-30" src="/src/images/pp.png">
-           <div>
+           <div class="">
           <h2 class="italic"> Princess Peach </h2>
           <p> 200 coins</p>
-          <p>Level 0</p>
+          <p id="pLevel">Level 0</p>
            </div>
         </button> 
-<br>
-        <button class="cursor-pointer mx-70  justify-items-center flex text-md rounded active:scale-90 rounded-2xl border-amber-200 border-2"> 
+
+        <button onclick="buyLuigi()" class="cursor-pointer mx-70  justify-items-center flex text-md rounded active:scale-90 rounded-2xl border-amber-200 border-2"> 
           <img class="w-32 h-35" src="/src/images/Luigi.png">
           <div class=""> 
           <h2>Luigi</h2>
-          <p>5000 coins</p>
-          <p>Level 0</p>
+          <p>10000 coins</p>
+          <p id="lLevel">Level 0</p>
           </div>
 
-          <button class="cursor-pointer top-5 justify-items-center left-80 flex text-md rounded active:scale-90 border-2 border-amber-200 rounded-2xl"> 
+          <button onclick="buyDaisy()" class="cursor-pointer top-5 justify-items-center left-80 flex text-md rounded active:scale-90 border-2 border-amber-200 rounded-2xl"> 
             <img class="w-32 h-33" src="/src/images/Daisy.png"> 
             <div>
               <h2>Daisy</h2>
-              <p>10000 coins</p>
-              <p>Level 0</p>
+              <p>500000 coins</p>
+              <p id="dLevel">Level 0</p>
             </div>
           </button>
 
+
+
+          <button onclick="buyBox()" class="cursor-pointer justify-items-center ml-130 flex text-md rounded active:scale-90 border-2 border-amber-200 rounded-2xl"> 
+            <img class="w-40 h-35" src="/src/images/mystery.png">
+            <div>
+              <h2>Mystery Box</h2>
+              <p> 500 coins</p>
+              <p id="boxLevel"> Level 0 </p>
+            </div>
+          </button>
 
         </div>
 
@@ -61,8 +71,8 @@
 
       <div class="upgrades bg-pink-400 border border-white">
 
-        <header class="top-0 right-0 border-yellow-200 bg-white border-x-160 text-center italic text-2xl">
-          Coins 00000
+        <header id="coinSwap" class="border-yellow-200 bg-white border-x-160 text-center italic text-2xl">
+         00000 Coins
         </header>
         <hr class="">
         <br>
@@ -74,6 +84,6 @@
 
 
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>
