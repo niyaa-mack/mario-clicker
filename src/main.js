@@ -1,7 +1,7 @@
-let points = 0
+let points = 20000 
 let luigiLevel = 0
-let princessLevel = 0 
-let daisyLevel = 0 
+let princessLevel = 0
+let daisyLevel = 0
 let boxLevel = 0
 let pLevel = document.getElementById("pLevel")
 let lLevel = document.getElementById("lLevel")
@@ -53,4 +53,11 @@ function buyBox() {
   } else {
     alert ("you dont have enough")
   }
+}
+
+function bigClick() {
+  let basePoint = 1 + (princessLevel ** 10.02) + (luigiLevel ** 80.5) + (daisyLevel ** 115.05) + (boxLevel ** 195.05)
+
+  changePoint(basePoint)
+
 }
